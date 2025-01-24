@@ -27,12 +27,13 @@ with open('cowsignal.out', mode='w') as f:
 
 #USACO solution
 with open("cowsignal.in", "r") as infile, open("cowsignal.out", "w") as outfile:
-
     r, c, k = map(int, infile.readline().split())
-    
+
     for _ in range(r):
         curr_row = infile.readline().strip()
 
         for _ in range(k):
-            expanded_row = ''.join(char * k for char in curr_row)
-            outfile.write(expanded_row + '\n')
+            expanded_row = "".join(char*k for char in curr_row)
+
+            outfile.write(expanded_row + "\n")
+    
